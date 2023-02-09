@@ -9,8 +9,8 @@ class Post extends Model
 {
     use HasFactory;
     
-    public function getPaginateByLmit(int $limit_count = 5)
+    public function getByLmit(int $limit_count = 5)
     {
-        return $this->orderBy('updated_at', 'DESC')->Paginate($limit_count);
+        return $this->orderBy('updated_at', 'DESC')->limit($limit_count)->get();
     }
 }
