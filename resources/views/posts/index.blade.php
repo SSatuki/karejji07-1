@@ -22,5 +22,8 @@
         <div class ='paginate'>
             {{ $posts->links() }}
             </div>
+            <div class='paginate'>
+                {{ $posts->links() }}
+            </div>
     </body>
 </html>
