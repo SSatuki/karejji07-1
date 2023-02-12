@@ -12,18 +12,12 @@
     <body class="antialiased">
         <h1>Blog Name</h1>
         <div class='posts'>
-            @foreach ($posts as $post)
+            @foreach($posts as $post)
                 <div class='post'>
                     <h2 class='title'>{{ $post->title }}</h2>
                     <P class='body'>{{ $post->body }}</P>
                 </div>
             @endforeach
         </div>
-        <div class ='paginate'>
-            {{ $posts->links() }}
-            </div>
-            <div class='paginate'>
-                {{ $posts->links() }}
-            </div>
     </body>
 </html>
